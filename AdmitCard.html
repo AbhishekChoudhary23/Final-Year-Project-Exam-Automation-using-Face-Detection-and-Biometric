@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard using HTML, CSS and Javascript</title>
+    <!-- MATERIAL ICONS -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside>
+        <div class="top">
+          <div class="close" id="close-btn">
+            <span class="material-icons-sharp">close</span>
+          </div>
+        </div>
+        <div class="profile">
+          <div class="profile-photo">
+            <img src="https://i.pinimg.com/736x/cd/bd/fc/cdbdfc4dbd32e0996be40e5b9954f4e8--photo-maker-id-photo.jpg" alt="" />
+          </div>
+          <div class="info">
+            <p><b>Abhishek Choudhary</b></p>
+            <small class="text-muted">Admin</small>
+          </div>
+        </div>
+
+        <div class="sidebar">
+          <a href="./StudentDetails.html">
+            <span class="material-icons-sharp">grid_view</span>
+            <h3>Dashboard</h3>
+          </a>
+          <a href="./timeTable.html">
+            <span class="material-icons-sharp">table_view</span>
+            <h3>Time Table</h3>
+          </a>
+          <a href="#" class="active">
+            <span class="material-icons-sharp">description</span>
+            <h3>Admit Card</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp">mail_outline</span>
+            <h3>Notifications</h3>
+            <span class="message-count">26</span>
+          </a>
+          <a href="https://mbmiums.in/(S(ytlgvlzby5mrbx5ooqb0d2ez))/Results/ExamResult.aspx">
+            <span class="material-icons-sharp">fact_check</span>
+            <h3>Result</h3>
+          </a>
+          <a href="./login.html">
+            <span class="material-icons-sharp">logout</span>
+            <h3>Logout</h3>
+          </a>
+        </div>
+      </aside>
+
+      <!-- -------------------END OF ASIDE(left sidebar)----------- -->
+      <main>
+        <div class="logo" onclick="dashboard">
+          <!-- <img src="images/MBM_Logo.png" alt="" /> -->
+          <!-- <h1>MBM UNIVERSITY</h1> -->
+        </div>
+        <h1 style="font-size: 2.5rem">Admit Card</h1>
+
+        <div class="dabba">
+          <div class="mbm_logo">
+            <img
+              style="width: 6.5rem; height: 6.5rem"
+              src="../images/MBM_Logo.png"
+              alt=""
+            />
+            <div>
+              <h2 style="font-size: 25px">
+                MBM UNIVERSITY, JODHPUR
+                <br />
+              </h2>
+              <h2 style="font-size: 25px; margin-left: -25px">
+                एम बी एम विश्वविद्यालय, जोधपुर
+              </h2>
+              <p style="padding-left: 3px">
+                State University Govt. of Rajasthan
+              </p>
+            </div>
+          </div>
+          <div id="student-details" class="details-card">
+            <img
+                src="https://i.pinimg.com/736x/cd/bd/fc/cdbdfc4dbd32e0996be40e5b9954f4e8--photo-maker-id-photo.jpg"
+                style="height: 200px; width: 150px; margin: auto;"
+                alt=""
+              />
+            <table
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+              class="Admitcard-of-details"
+            >
+              <!--line:509 -->
+              <tbody style="text-align: center; padding: 0">
+                <tr>
+                  <th
+                    style="padding: 15px; display: flex; justify-content: start"
+                  >
+                  Name of Examination:
+                  </th>
+                  <!-- <td style="width: 50%;"></td> -->
+                  <td style="text-align: start">BE VIII Sem Examination 2023-2024</td>
+                </tr>
+                <tr>
+                  <th style="padding: 15px; text-align: start">
+                    Enrollment No. :
+                  </th>
+                  <td style="padding: 15px; text-align: start">20R/43483</td>
+                </tr>
+                <tr>
+                  <th style="padding: 15px; text-align: start">Department:</th>
+                  <td style="padding: 15px; text-align: start">Electronics and Communication Engineering</td>
+                </tr>
+                <tr>
+                  <th style="padding: 15px; text-align: start">Father's Name:</th>
+                  <td style="padding: 15px; text-align: start">Jagdish Choudhary</td>
+                </tr>
+                <tr>
+                  <th style="padding: 15px; text-align: start">Email Id:</th>
+                  <td style="padding: 15px; text-align: start">abhihsek@gmail.com</td>
+                </tr>
+                <tr>
+                  <th style="padding: 15px; text-align: start">Venue:</th>
+                  <td style="padding: 15px; text-align: start">Examination Center</td>
+                </tr>
+                <tr>
+                  <th style="padding: 15px; text-align: start">
+                    Category:
+                  </th>
+                  <td style="padding: 15px; text-align: start">Regular</td>
+                </tr>
+                <tr>
+                  <th style="padding: 15px; text-align: start">
+                    Form No.:
+                  </th>
+                  <td style="padding: 15px; text-align: start">12345</td>
+                </tr>
+                <tr>
+                  <th style="padding: 15px; text-align: start">
+                    Name Of Candidate:
+                  </th>
+                  <td style="padding: 15px; text-align: start">Abhishek Choudhary</td>
+                </tr>
+                <tr>
+                  <th style="padding: 15px; text-align: start">
+                    Mother's Name:
+                  </th>
+                  <td style="padding: 15px; text-align: start">Priti Singh</td>
+                </tr>
+                <tr>
+                  <th style="padding: 15px; text-align: start">
+                    Mobile No.:
+                  </th>
+                  <td style="padding: 15px; text-align: start">9234696469</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- <div id="teacher-details" class="details-card">
+            <div>
+              <img
+                src="/images/IMG20230610132536.jpg"
+                style="height: 300px; width: 225px; margin: auto; border-radius: 10px;"
+                alt=""
+              />
+              <p style="font-size: 1.2rem; text-align: center; margin-top: 10px;">HOD Kapil Parihar</p>
+
+            </div>
+            <table
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+              class="card-of-details"
+            >
+              <tbody style="text-align: center; padding: 0">
+                <tr>
+                  <th
+                    style="padding: 15px; display: flex; justify-content: start"
+                  >
+                  Name of Examination:
+                  </th>
+                  <td style="text-align: start">Head of Department</td>
+                </tr>
+                <tr>
+                  <th style="padding: 15px; text-align: start">
+                    Enrollment No. :
+                  </th>
+                  <td style="padding: 15px; text-align: start">2999</td>
+                </tr>
+                <tr>
+                  <th style="padding: 15px; text-align: start">Department:</th>
+                  <td style="padding: 15px; text-align: start">12334</td>
+                </tr>
+                <tr>
+                  <th style="padding: 15px; text-align: start">Father's Name:</th>
+                  <td style="padding: 15px; text-align: start">2999</td>
+                </tr>
+                <tr>
+                  <th style="padding: 15px; text-align: start">Email Id:</th>
+                  <td style="padding: 15px; text-align: start">Kapil Sir</td>
+                </tr>
+                <tr>
+                  <th style="padding: 15px; text-align: start">Venue:</th>
+                  <td style="padding: 15px; text-align: start">17/02/2024</td>
+                </tr>
+                <tr>
+                  <th style="padding: 15px; text-align: start">
+                    Category:
+                  </th>
+                  <td style="padding: 15px; text-align: start">9 am</td>
+                </tr>
+                <tr>
+                  <th style="padding: 15px; text-align: start">
+                    Form No.:
+                  </th>
+                  <td style="padding: 15px; text-align: start">9 am</td>
+                </tr>
+                <tr>
+                  <th style="padding: 15px; text-align: start">
+                    Name Of Candidate:
+                  </th>
+                  <td style="padding: 15px; text-align: start">9 am</td>
+                </tr>
+                <tr>
+                  <th style="padding: 15px; text-align: start">
+                    Mother's Name:
+                  </th>
+                  <td style="padding: 15px; text-align: start">9 am</td>
+                </tr>
+                <tr>
+                  <th style="padding: 15px; text-align: start">
+                    Mobile No.:
+                  </th>
+                  <td style="padding: 15px; text-align: start">9 am</td>
+                </tr>
+              </tbody>
+            </table>
+          </div> -->
+        </div>
+        <!-------------------- END OF INSIGHTS --------------------->
+      </main>
+      <!-- --------------------END OF MAIN --------------------->
+
+      <div class="right">
+        <div class="top">
+          <button id="menu-btn">
+            <span class="material-icons-sharp">menu</span>
+          </button>
+
+          <div class="theme-toggler">
+            <span class="material-icons-sharp active">light_mode</span>
+            <span class="material-icons-sharp">dark_mode</span>
+          </div>
+        </div>
+        <!-- --------------END OF TOP------------- -->
+
+        <div class="recent-updates">
+          <h2>Notifications</h2>
+          <div class="updates">
+            <div class="update">
+              <div style="overflow: visible" class="profile-photo">
+                <img src="images/pdf.png" alt="" />
+              </div>
+              <div class="message">
+                <p>OFFICE ORDER ODD SEMESTER SPECIAL EXAM 2023</p>
+                <small class="text-muted">05/10/2023</small>
+              </div>
+            </div>
+
+            <div class="update">
+              <div style="overflow: visible" class="profile-photo">
+                <img src="images/pdf.png" alt="" />
+              </div>
+              <div class="message">
+                <p>
+                  NOTIFICATION REGARDING BE CBCS SEM VIIITH 2023 EXAMINATION
+                  FORMS.
+                </p>
+                <small class="text-muted">04/05/2023</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ----------------------END OF RECENT UPDATES--------->
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

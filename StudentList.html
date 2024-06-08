@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teacher Dashboard</title>
+    <!-- MATERIAL ICONS -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside>
+        <div class="top">
+          <div class="close" id="close-btn">
+            <span class="material-icons-sharp">close</span>
+          </div>
+        </div>
+        <div class="profile">
+          <div class="profile-photo">
+            <img src="images/IMG20230610132536.jpg" alt="" />
+          </div>
+          <div class="info">
+            <p><b>Abhishek Choudhary</b></p>
+            <small class="text-muted">Admin</small>
+          </div>
+        </div>
+
+        <div class="sidebar">
+          <a href="./TeacherDetails.html">
+            <span class="material-icons-sharp">grid_view</span>
+            <h3>Dashboard</h3>
+          </a>
+          <a href="#" class="active">
+            <span class="material-icons-sharp">table_view</span>
+            <h3>Student List</h3>
+          </a>
+          <a
+            onclick="window.location='http://localhost:5000/dropsession'"
+            type="submit"
+          >
+            <span class="material-icons-sharp">logout</span>
+            <h3>Logout</h3>
+          </a>
+        </div>
+      </aside>
+
+      <!-- -------------------END OF ASIDE(left sidebar)----------- -->
+      <main>
+        <div class="mbm_logo">
+          <img
+            style="width: 6.5rem; height: 6.5rem"
+            src="../images/MBM_Logo.png"
+            alt=""
+          />
+          <div>
+            <h2 style="font-size: 25px">
+              MBM UNIVERSITY, JODHPUR
+              <br />
+            </h2>
+            <h2 style="font-size: 25px; margin-left: -25px">
+              एम बी एम विश्वविद्यालय, जोधपुर
+            </h2>
+            <p style="padding-left: 3px">
+              State University Govt. of Rajasthan
+            </p>
+          </div>
+        </div>
+        <div class="recent-orders">
+          <table>
+            <thead>
+              <tr>
+                <th>S.No</th>
+                <th>Roll No.</th>
+                <th>Name</th>
+                <th>Branch</th>
+                <th>Paper Code</th>
+                <th>Take Photo/Biometric</th>
+                <th>Attendance</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{{index+1}}</td>
+                <form action="/capture_attendance" method="post" class="form">
+                  <td class="primary">
+                    <input type="text" name="stroll" value= "{{row["rollno"]}}"
+                    readonly >
+                  </td>
+                  <td>
+                    <input type="text" name="stname" value= "{{row["name"]}}"
+                    readonly >
+                  </td>
+                  <td>{{row["branch"]}}</td>
+                  <td>
+                    <input type="text" name="papercode" value=
+                    "{{row["Papercode"]}}" readonly >
+                  </td>
+                  <td class="column"><button type="submit">📷</button></td>
+                  <td class="warning">{{row["attendance"]}}</td>
+                </form>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>{{subject}}</td>
+                <td>{{subjectCode}}</td>
+                <td>{{date_day}}</td>
+                <td class="primary">{{time}}</td>
+                <td class="warning">{{status}}</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>{{subject}}</td>
+                <td>{{subjectCode}}</td>
+                <td>{{date_day}}</td>
+                <td class="primary">{{time}}</td>
+                <td class="warning">{{status}}</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>{{subject}}</td>
+                <td>{{subjectCode}}</td>
+                <td>{{date_day}}</td>
+                <td class="primary">{{time}}</td>
+                <td class="warning">{{status}}</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>{{subject}}</td>
+                <td>{{subjectCode}}</td>
+                <td>{{date_day}}</td>
+                <td class="primary">{{time}}</td>
+                <td class="warning">{{status}}</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>{{subject}}</td>
+                <td>{{subjectCode}}</td>
+                <td>{{date_day}}</td>
+                <td class="primary">{{time}}</td>
+                <td class="warning">{{status}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-------------------- END OF INSIGHTS --------------------->
+      </main>
+      <!-- --------------------END OF MAIN --------------------->
+
+      <div class="right">
+        <div class="top">
+          <button id="menu-btn">
+            <span class="material-icons-sharp">menu</span>
+          </button>
+
+          <div class="theme-toggler">
+            <span class="material-icons-sharp active">light_mode</span>
+            <span class="material-icons-sharp">dark_mode</span>
+          </div>
+        </div>
+        <!-- --------------END OF TOP------------- -->
+
+        <!-- <div class="recent-updates">
+          <h2>Notifications</h2>
+          <div class="updates">
+            <div class="update">
+              <div class="profile-photo">
+                <img src="images/pdf.png" alt="" />
+              </div>
+              <div class="message">
+                <p>OFFICE ORDER ODD SEMESTER SPECIAL EXAM 2023</p>
+                <small class="text-muted">05/10/2023</small>
+              </div>
+            </div>
+
+            <div class="update">
+              <div class="profile-photo">
+                <img src="images/pdf.png" alt="" />
+              </div>
+              <div class="message">
+                <p>
+                  NOTIFICATION REGARDING BE CBCS SEM VIIITH 2023 EXAMINATION
+                  FORMS.
+                </p>
+                <small class="text-muted">04/05/2023</small>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- ----------------------END OF RECENT UPDATES--------->
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

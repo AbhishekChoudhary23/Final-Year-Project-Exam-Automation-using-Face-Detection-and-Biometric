@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./login.css" />
+    <title>Login Page</title>
+  </head>
+
+  <body>
+    <div class="mbm_logo">
+      <img src="../images/MBM_Logo.png" alt="" />
+      <div>
+        <h2 style="font-size: 30px">
+          एम बी एम विश्वविद्यालय, जोधपुर<br />
+          MBM UNIVERSITY, JODHPUR
+        </h2>
+        <p style="padding-left: 0px">State University Govt. of Rajasthan</p>
+      </div>
+    </div>
+    <div class="container" id="container">
+      <div class="form-container student-Login">
+        <form>
+          <h1>Student Login</h1>
+          <input type="text" placeholder="Roll Number" />
+          <input type="password" placeholder="Password" />
+          <button>
+            <a
+              style="text-decoration: none; color: white"
+              href="./StudentDetails.html"
+              >Log In</a
+            >
+          </button>
+        </form>
+      </div>
+      <div class="form-container teacher-Login">
+        <form>
+          <h1>Teacher Login</h1>
+          <input type="text" placeholder="Teacher Id" />
+          <input type="password" placeholder="Password" />
+          <button>
+            <a
+              style="text-decoration: none; color: white"
+              href="./TeacherDetails.html"
+              >Log In</a
+            >
+          </button>
+        </form>
+      </div>
+      <div class="toggle-container">
+        <div class="toggle">
+          <div class="toggle-panel toggle-left">
+            <h1>
+              Are you a <br />
+              Teacher? <br />
+              <br />
+            </h1>
+            <!-- <p>Enter your personal details to use all of site features</p> -->
+            <button class="hidden" id="login">Teacher Login</button>
+          </div>
+          <div class="toggle-panel toggle-right">
+            <h1>
+              Are you a <br />
+              Student? <br />
+              <br />
+            </h1>
+            <!-- <p>Register with your personal details to use all of site features</p> -->
+            <button class="hidden" id="register">Student Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./login.js"></script>
+  </body>
+</html>

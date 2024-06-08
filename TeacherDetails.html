@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teacher Dashboard</title>
+    <!-- MATERIAL ICONS -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside>
+        <div class="top">
+          <div class="close" id="close-btn">
+            <span class="material-icons-sharp">close</span>
+          </div>
+        </div>
+        <div class="profile">
+          <div class="profile-photo">
+            <img src="https://thumbs.dreamstime.com/z/teacher-portrait-caucasian-blackboard-background-42737782.jpg" alt="" />
+          </div>
+          <div class="info">
+            <p><b>Kapil Parihar</b></p>
+            <small class="text-muted">Admin</small>
+          </div>
+        </div>
+
+        <div class="sidebar">
+          <a href="#" class="active">
+            <span class="material-icons-sharp">grid_view</span>
+            <h3>Dashboard</h3>
+          </a>
+          <a href="StudentList.html">
+            <span class="material-icons-sharp">table_view</span>
+            <h3>Student List</h3>
+          </a>
+          <a
+            onclick="window.location='http://localhost:5000/dropsession'"
+            type="submit"
+          >
+            <span class="material-icons-sharp">logout</span>
+            <h3>Logout</h3>
+          </a>
+        </div>
+      </aside>
+
+      <!-- -------------------END OF ASIDE(left sidebar)----------- -->
+      <main style="z-index: 20; width: 120%; margin-top: 1.4rem;">
+        <div class="mbm_logo">
+          <img
+            style="width: 6.5rem; height: 6.5rem"
+            src="../images/MBM_Logo.png"
+            alt=""
+          />
+          <div>
+            <h2 style="font-size: 25px">
+              MBM UNIVERSITY, JODHPUR
+              <br />
+            </h2>
+            <h2 style="font-size: 25px; margin-left: -25px">
+              एम बी एम विश्वविद्यालय, जोधपुर
+            </h2>
+            <p style="padding-left: 3px">State University Govt. of Rajasthan</p>
+          </div>
+        </div>
+
+        <div style="z-index: 20" class="dabba">
+          <h1 style="font-size: 2.5rem ">Details</h1>
+          <div id="teacher-details" class="details-card">
+            <div style="margin-bottom: 10px;">
+              <img
+                src="https://thumbs.dreamstime.com/z/teacher-portrait-caucasian-blackboard-background-42737782.jpg"
+                style="height: 200px; width: 150px; margin: auto; border-radius: 10px;"
+                alt=""
+              />
+              <p style="font-size: 1.2rem; text-align: center; margin-top: 10px;">HOD Kapil Parihar</p>
+
+            </div>
+            
+            <table
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+              class="card-of-details"
+            >
+              <!--line:509 -->
+              <tbody style="text-align: center; padding: 0">
+                <tr>
+                  <th
+                    style="padding: 15px; display: flex; justify-content: start"
+                  >
+                  Designation:
+                  </th>
+                  <!-- <td style="width: 50%;"></td> -->
+                  <td style="text-align: start">Head of Department</td>
+                </tr>
+                <tr>
+                  <th style="padding: 15px; text-align: start">
+                    Exam Duration :
+                  </th>
+                  <td style="padding: 15px; text-align: start">2999</td>
+                </tr>
+                <tr>
+                  <th style="padding: 15px; text-align: start">Teacher ID:</th>
+                  <td style="padding: 15px; text-align: start">12334</td>
+                </tr>
+                <tr>
+                  <th style="padding: 15px; text-align: start">Venue:</th>
+                  <td style="padding: 15px; text-align: start">2999</td>
+                </tr>
+                <tr>
+                  <th style="padding: 15px; text-align: start">Name:</th>
+                  <td style="padding: 15px; text-align: start">Kapil Sir</td>
+                </tr>
+                <tr>
+                  <th style="padding: 15px; text-align: start">Venue:</th>
+                  <td style="padding: 15px; text-align: start">17/02/2024</td>
+                </tr>
+                <tr>
+                  <th style="padding: 15px; text-align: start">
+                    Date:
+                  </th>
+                  <td style="padding: 15px; text-align: start">18-May-2024</td>
+                </tr>
+                <tr>
+                  <th style="padding: 15px; text-align: start">
+                    Reporting Time:
+                  </th>
+                  <td style="padding: 15px; text-align: start">9 am</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-------------------- END OF INSIGHTS --------------------->
+      </main>
+      <!-- --------------------END OF MAIN --------------------->
+
+      <div class="right">
+        <div class="top">
+          <button id="menu-btn">
+            <span class="material-icons-sharp">menu</span>
+          </button>
+
+          <div class="theme-toggler">
+            <span class="material-icons-sharp active">light_mode</span>
+            <span class="material-icons-sharp">dark_mode</span>
+          </div>
+        </div>
+        <!-- --------------END OF TOP------------- -->
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
